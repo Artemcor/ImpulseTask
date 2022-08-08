@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.otf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PageViewController" customModule="ImpulseTask" customModuleProvider="target">
+            <connections>
+                <outlet property="pageImage" destination="qZ7-m4-cj9" id="FgA-I3-Krb"/>
+                <outlet property="pageMainTitle" destination="Xbj-f1-Mqk" id="Gx4-tf-5NZ"/>
+                <outlet property="pageSubtitle" destination="wZy-0M-xPg" id="Nmm-if-E81"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hRd-Ii-67q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="boostProductivity" translatesAutoresizingMaskIntoConstraints="NO" id="qZ7-m4-cj9">
+                    <rect key="frame" x="28" y="191" width="358" height="280"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boost Productivity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbj-f1-Mqk">
+                    <rect key="frame" x="80" y="511" width="254" height="34"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your work done seamlessly without interruption" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZy-0M-xPg">
+                    <rect key="frame" x="28" y="557" width="358" height="39"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="backgoroundPrimary"/>
+            <constraints>
+                <constraint firstItem="Xbj-f1-Mqk" firstAttribute="top" secondItem="qZ7-m4-cj9" secondAttribute="bottom" constant="40" id="GEP-Xg-UQL"/>
+                <constraint firstItem="Xbj-f1-Mqk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QLV-B4-4Kn"/>
+                <constraint firstItem="wZy-0M-xPg" firstAttribute="top" secondItem="Xbj-f1-Mqk" secondAttribute="bottom" constant="12" id="UNg-He-wAb"/>
+                <constraint firstItem="wZy-0M-xPg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="UOi-rI-hnL"/>
+                <constraint firstItem="qZ7-m4-cj9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="afe-rx-N2f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qZ7-m4-cj9" secondAttribute="trailing" constant="28" id="hcv-Bu-hjf"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wZy-0M-xPg" secondAttribute="bottom" constant="170" id="rU6-la-Si8"/>
+                <constraint firstAttribute="trailing" secondItem="wZy-0M-xPg" secondAttribute="trailing" constant="28" id="vu5-gC-bMk"/>
+                <constraint firstItem="qZ7-m4-cj9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" priority="500" constant="147" id="wsp-Yz-JkS"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="boostProductivity" width="319" height="280"/>
+        <namedColor name="backgoroundPrimary">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
